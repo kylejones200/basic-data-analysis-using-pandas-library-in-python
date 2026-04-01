@@ -1,13 +1,45 @@
 # Basic Data Analysis using Pandas Library in Python
 
-**Published:** 2024-04-20
-**Medium:** [https://medium.com/@kyle-t-jones/basic-data-analysis-using-pandas-library-in-python-61ed815b834a](https://medium.com/@kyle-t-jones/basic-data-analysis-using-pandas-library-in-python-61ed815b834a)
+This project demonstrates basic data analysis techniques using the Pandas library.
 
-## About
+## Article
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
+Medium article: [Basic Data Analysis using Pandas Library in Python](https://medium.com/python-in-plain-english/basic-data-analysis-using-pandas-library-61ed815b834a)
 
-## Files
+## Project Structure
 
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
+```
+.
+├── README.md           # This file
+├── main.py            # Main entry point
+├── config.yaml        # Configuration file
+├── requirements.txt   # Python dependencies
+├── src/               # Core functions
+│   ├── core.py        # Data analysis functions
+│   └── plotting.py    # Tufte-style plotting utilities
+├── tests/             # Unit tests
+├── data/              # Data files
+└── images/            # Generated plots and figures
+```
+
+## Configuration
+
+Edit `config.yaml` to customize:
+- Data source or synthetic generation
+- Analysis options
+- Output settings
+
+## Features
+
+Basic Pandas operations:
+- Data loading and exploration
+- Summary statistics
+- Data type analysis
+- Memory usage
+- Distribution plots
+
+## Caveats
+
+- By default, generates synthetic data for demonstration.
+- Customize analysis columns in config.yaml.
+- Supports CSV, Excel, and other Pandas-readable formats.
