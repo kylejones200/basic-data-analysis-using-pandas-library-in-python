@@ -26,7 +26,7 @@ def calculate_summary_statistics(df: pd.DataFrame) -> Dict:
     }
 
 def plot_data_distribution(df: pd.DataFrame, column: str, title: str, output_path: Path):
- """Plot data distribution """
+    """Plot data distribution """
     fig, ax = plt.subplots(figsize=(10, 6))
     
     if df[column].dtype in ['int64', 'float64']:
