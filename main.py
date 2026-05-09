@@ -54,7 +54,7 @@ def main():
     stats = calculate_summary_statistics(df)
     logging.info(f"\nMemory Usage: {stats['memory_usage'] / 1024**2:.2f} MB")
     
-        for col in df.select_dtypes(include=[np.number]).columns:
+    for col in df.select_dtypes(include=[np.number]).columns:
             plot_data_distribution(df, col, f"Distribution of {col}",
                                  output_dir / f'distribution_{col}.png')
     
