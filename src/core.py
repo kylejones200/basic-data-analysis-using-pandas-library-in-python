@@ -1,9 +1,7 @@
 """Core functions for basic data analysis using Pandas."""
 
-import numpy as np
 import pandas as pd
 from pathlib import Path
-from typing import Dict
 import matplotlib.pyplot as plt
 import logging
 
@@ -15,7 +13,7 @@ def load_and_explore_data(file_path: Path) -> pd.DataFrame:
     df = pd.read_csv(file_path)
     return df
 
-def calculate_summary_statistics(df: pd.DataFrame) -> Dict:
+def calculate_summary_statistics(df: pd.DataFrame) -> dict:
     """Calculate summary statistics for numerical columns."""
     return {
         'shape': df.shape,

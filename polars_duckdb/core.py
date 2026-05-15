@@ -5,7 +5,6 @@ import polars as pl
 import matplotlib.pyplot as plt
 import logging
 from pathlib import Path
-from typing import Dict
 
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
@@ -14,7 +13,7 @@ def load_data(file_path: Path) -> pl.DataFrame:
     return pl.read_csv(file_path)
 
 
-def calculate_summary_statistics(df: pl.DataFrame) -> Dict:
+def calculate_summary_statistics(df: pl.DataFrame) -> dict:
     numeric_cols = [c for c, t in zip(df.columns, df.dtypes) if t.is_numeric()]
 
     if numeric_cols:

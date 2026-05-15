@@ -18,7 +18,7 @@ def load_config(config_path: Path = None) -> dict:
     if config_path is None:
         config_path = Path(__file__).parent / 'config.yaml'
     
-    with open(config_path, 'r') as f:
+    with open(config_path) as f:
         return yaml.safe_load(f)
 
 def main():
@@ -46,9 +46,9 @@ def main():
         raise ValueError("No data source specified")
     
         logging.info(f"Shape: {df.shape}")
-    logging.info(f"\nColumn Types:")
+    logging.info("\nColumn Types:")
     logging.info(df.dtypes)
-    logging.info(f"\nSummary Statistics:")
+    logging.info("\nSummary Statistics:")
     logging.info(df.describe())
     
     stats = calculate_summary_statistics(df)
