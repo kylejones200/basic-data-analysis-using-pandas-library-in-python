@@ -285,9 +285,8 @@ print(f"Los Angeles and San Francisco Counties : \n {la_sf_counties}")
 low_cases = df.loc[df['cases'] <= 10]
 low_cases.loc[:, 'deaths'] = 0
 print(f"Low Cases : \n {low_cases}")
-```
 
-``` 
+
 low_cases.loc[:, 'deaths'] = 0
 ```
 
